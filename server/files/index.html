@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="https://fb.me/react-0.14.8.js"></script>
+<script src="https://fb.me/react-dom-0.14.8.js"></script>
+<script src='components.js'></script>
+<link rel="stylesheet" type="text/css" href="components.css">
+</head>
+<body>
+<div id='container' style="border:solid 2px green;">
+
+</div>
+<div id='detail'>
+
+</div>
+</body>
+
+<script>	
+	var greetings = 'Welcome to the React Project. Enjoy!!!.';
+	var colors = ['#5cb85c', '#6f5499', '#ec971f', '#31b0d5', '#286090', '#c9302c'];
+	var options = ['WFN','Total Source','Marketplace','ADP'];
+	var j = ReactDOM.render(React.createElement(rt), document.getElementById("container"));
+	var popup = ReactDOM.render(React.createElement(EmpDetail), document.getElementById("detail"));
+	document.getElementById('detail').style.display='none';
+	j.loadPage();
+</script>
+</html>

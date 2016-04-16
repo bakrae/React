@@ -1,0 +1,14 @@
+#container{height:800px;width:800px;text-align:center;margin:auto}
+.greetings{height: 60px;padding: 10px;font: 24px arial, sans-serif;color: brown;border-bottom:1px solid}
+.empWrapper{cursor:pointer;border: 1px solid;width: 150px;height: 150px;margin: 10px;border-radius: 8px;color: white;display:inline-block;}
+.empId{height: 20px;font-size: 12px;padding:5px;border-bottom: 1px dashed red;border-top-left-radius: 8px;border-top-right-radius: 8px;}
+.empName{font-size: 26px;height: 70px;vertical-align: middle;display: table-cell;width: 200px}
+.empDept{height: 45px;font-size: 12px;padding: 2px 5px;border-top: 1px dotted red;text-overflow: elipsis;overflow: none}
+#detail{width: 100%;height: 100%;position: absolute;text-align: center;background-color: rgba(19, 18, 18,0.4);left: 0px;top: 0px;}
+.detailWrapper{border:2px solid green;width:350px;height:600px;text-align:center;background-color:rgb(245,222,179);margin:5% auto;}
+.button{background-color:#5bc0de;color:white;height:22px;width:120px;border-radius:15px;display: inline-block;position: absolute;padding: 5px;cursor:pointer;font-size:18px;margin-left: 10px;}
+.delButton{color:red;}
+#msgbox{position: relative;top: 168px;font-size: 15px;font-weight: bold;color: green;}
+button{cursor:pointer}
+input,select{margin:10px;}
+label{display:block;}
