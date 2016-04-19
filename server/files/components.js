@@ -30,7 +30,6 @@ function msgbox(str){
 	setTimeout(function(){msg1.innerHTML = '';},2000);
 }
 var rt = React.createClass({
-	ids:[],
 	getInitialState: function() {
 		var obj = [];
 		obj = this.props.data ? this.props.data : obj;
@@ -51,11 +50,9 @@ var rt = React.createClass({
 	},
 	render: function() {
 		var wrapper = null;		
-		var _this = this;
 		if(this.state.data.length>0){
 			wrapper = React.createElement('div',{},
 				this.state.data.map(function(e){
-					_this.ids.push(e.id);
 					return React.createElement(Employee,{data:e});
 				})
 			);
@@ -146,7 +143,6 @@ var EmpDetail = React.createClass({
 		var cb = function(data){data=JSON.parse(data||'{}');msgbox(data.msg);popup.state.o=true;popup.set(d);}
 		var d = this.get();
 		if(d.id==''||d.fname==''||d.lname==''||d.phn==''||d.email==''||d.dept==''){alert('All values must be entered');return;}
-		if(j.ids.indexOf(d.id)>-1){alert('Userid already in use');return;}
 		if(/[^0-9]/.test(d.phn)){alert('Phone number must be digits only');return;}
 		ajax('GET','/save','d='+JSON.stringify(d),cb);
 	},
